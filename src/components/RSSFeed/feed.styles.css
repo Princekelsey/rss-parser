@@ -1,0 +1,45 @@
+/*
+=============== 
+Feed Styles
+===============
+*/
+
+.feed-container {
+  width: 100%;
+  position: relative;
+  -moz-border-radius: 2px;
+  background: #fefefe;
+  box-shadow: 0 0 1px rgba(34, 25, 25, 0.4);
+  margin-bottom: 22px;
+  word-break: break-word;
+}
+
+.feed-item {
+  width: 100%;
+  display: inline-table;
+  border-top: 1px solid #eee;
+  overflow: hidden;
+}
+
+.feed-item:nth-child(odd) {
+  padding: 12px 15px;
+  background-color: #fff;
+}
+
+.feed-item:nth-child(even) {
+  padding: 12px 15px;
+  background-color: #f5f5f5;
+}
+
+.feedpage-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: auto;
+}
+
+.pagination-wrapper {
+  width: 100%;
+  overflow: auto;
+}

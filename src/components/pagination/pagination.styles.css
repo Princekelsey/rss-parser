@@ -1,0 +1,31 @@
+/*
+=============== 
+Pagination Styles
+===============
+*/
+
+#page-numbers {
+  list-style: none;
+  display: flex;
+}
+
+#page-numbers > li {
+  margin-right: 0.3em;
+  color: var(--clr-grey-3);
+  user-select: none;
+  text-align: center;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0 6px;
+  border: 1px solid var(--clr-grey-8);
+}
+
+#page-numbers .active {
+  color: #1890ff;
+  border: 1px solid #1890ff;
+}
+
+#page-numbers > li:hover {
+  color: #1890ff;
+  border: 1px solid #1890ff;
+}
