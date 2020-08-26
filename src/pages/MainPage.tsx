@@ -40,6 +40,8 @@ const MainPage: React.FC = () => {
 
   const handleSearch = (url: string) => {
     setIsFetching(true);
+    setFeeds(null);
+    setError(false);
     setPage({ ...page, currentPage: 1 });
     getFeeds(url);
   };
@@ -61,7 +63,7 @@ const MainPage: React.FC = () => {
     <main>
       <SearchContainer handleSearch={handleSearch} />
       {isFetching && <Spinner />}
-      {rssFeeds ? (
+      {rssFeeds && (
         <Feeds
           feedDate={{
             feedItems: rssFeeds.items,
@@ -73,7 +75,7 @@ const MainPage: React.FC = () => {
           feedsPerPage={feedsPerPage}
           handlePageChange={handlePageChange}
         />
-      ) : null}
+      )}
       {isError && <Error />}
     </main>
   );

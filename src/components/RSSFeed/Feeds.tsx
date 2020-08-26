@@ -25,7 +25,7 @@ const Feeds: React.FC<Props> = ({
 
   return (
     <div className="container">
-      <div className="row mt-4">
+      <div className="row mt-3">
         <div className="feed-container">
           <div className="feed-item">
             <h2 className="text-center">{feedTitle}</h2>
